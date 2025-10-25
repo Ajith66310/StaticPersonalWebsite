@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajith</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" href="ajith.jpg" type="image/icon type">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajith</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="ajith.jpg" type="image/icon type">
+
 </head>
-<body>
+
+<body style="overflow-x: hidden;">
   <div class="container-fluid">
     <div class="row">
-    <!-----navbar----->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-4">
-        <a class="navbar-brand" href="#">AJITH K V</a>
-          <button id="navbar-btn" class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!-----navbar----->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-4">
+        <button id="navbar-btn" class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item active">
               <a class="nav-link js-scroll-trigger" href="#">Home</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link js-scroll-trigger" href="#service">Service</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-              </li>
+              <a class="nav-link js-scroll-trigger" href="#service">Service</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>      
+      </nav>
     </div>
   </div>
   <!----card profile---->
-      <div class="card mb-3 pb-5" style="width: 100%; border:none;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="dpofweb.jpg" class="img-fluid" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body ">
-              <p class="card-title">A front-end-developer.</p>
-              <p class="card-text">Thrissur,Kerala,India</p>
-            </div>
-        </div>
+  <div class="card mb-3 pb-5 main-card">
+    <div class="row g-0 h-100">
+      <!-- Left Side Image -->
+      <div class="col-md-6 left-image">
+        <img src="images/ajith.jpg" alt="Ajith K V" class="img-fluid">
       </div>
+
+      <!-- Right Side Text -->
+      <div class="col-md-6 gsap-right card-body d-flex flex-column justify-content-center">
+        <p class="card-title">I'm Ajith K V</p>
+        <p class="card-title text-primary">A MERN Developer.</p>
+        <p class="card-text">Thrissur, Kerala, India</p>
+      </div>
+    </div>
   </div>
+
   <!------card------>
-  <div id="service" class="container-fluid pb-5 bg-dark pt-3 mt-5 " >
-  <h1 style=" padding-top:5px; text-align: center; color:white; font-family: sans-serif; font-weight:600;">Services</h1>
+  <div id="service" class="container-fluid pb-5 bg-dark pt-3 mt-5 ">
+    <h1 style=" padding-top:5px; text-align: center; color:white; font-family: sans-serif; font-weight:600;">Services
+    </h1>
     <div class="row" style="justify-content:center;">
       <div class="card mx-3 mt-3" style="width: 18rem;">
         <i class="fa-solid fa-laptop-code display-1 text-center"></i>
         <div class="card-body">
-          <p class="card-text">Front-End-Developer</p>
+          <p class="card-text">MERN Developer</p>
         </div>
       </div>
 
@@ -81,81 +90,94 @@
       </div>
     </div>
   </div>
-<!--cardrow2-->
-  <div id="experience" class="container-fluid pb-5 bg-white  mt-5 " >
-    <h1 style=" padding-top:5px; text-align: center; color:black; font-family: sans-serif; font-weight:900;">Experience</h1>
-      
+  <!--cardrow2-->
+  <div id="experience" class="container-fluid pb-5 bg-white  mt-5 ">
+    <h1 style=" padding-top:5px; text-align: center; color:black; font-family: sans-serif; font-weight:900;">Experience
+    </h1>
+
     <div class="row" style="justify-content:center;">
-        <div class="card mx-3 mt-4" style="width: 18rem;">
-          <img class="card-img-top" src="amazon.jpg" alt="Card image cap" style="height:8rem;">
-          <div class="card-body">
-            <p class="card-text">texto modelo da indústria</p>
-          </div>
+      <div class="card mx-3 mt-4" style="width: 18rem;">
+        <img class="card-img-top" src="images/amazon.jpg" alt="Card image cap" style="height:8rem;">
+        <div class="card-body">
+          <p class="card-text">texto modelo da indústria</p>
         </div>
-  
-        <div class="card mt-4 mx-3" style="width: 18rem;">
-          <img class="card-img-top" src="Takamaka.jpg" alt="Card image cap" style="height:8rem;">
-          <div class="card-body">
-            <p class="card-text">Ipsum tem vindo a ser o</p>
-          </div>
+      </div>
+
+      <div class="card mt-4 mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/Takamaka.jpg" alt="Card image cap" style="height:8rem;">
+        <div class="card-body">
+          <p class="card-text">Ipsum tem vindo a ser o</p>
         </div>
-  
-        <div class="card mt-4 mx-3" style="width: 18rem;">
-          <img class="card-img-top" src="PARRK.gif" alt="Card image cap" style="height:8rem;">
-          <div class="card-body">
-            <p class="card-text">estas indústrias desde</p>
-          </div>
+      </div>
+
+      <div class="card mt-4 mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/Takamaka.jpg" alt="Card image cap" style="height:8rem;">
+        <div class="card-body">
+          <p class="card-text">estas indústrias desde</p>
         </div>
-  
-        <div class="card mt-4 mx-3" style="width: 18rem;">
-          <img class="card-img-top" src="vguard.jpg" alt="Card image cap" style="height:8rem;">
-          <div class="card-body">
-            <p class="card-text">ano de 1500, quando uma </p>
-          </div>
+      </div>
+
+      <div class="card mt-4 mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/vguard.jpg" alt="Card image cap" style="height:8rem;">
+        <div class="card-body">
+          <p class="card-text">ano de 1500, quando uma </p>
         </div>
       </div>
     </div>
+  </div>
   <!--contactform-->
   <div id="contact" class="container pb-4 bg-dark pt-3 mt-5" style=" border-radius:10px; color:white;">
     <div class="row">
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input placeholder="Email" type="email" id="myemail" class="form-control pb-2 fs-4" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text" style="color:white;">We'll never share your email with anyone else.</div>
+          <input placeholder="Email" type="email" id="myemail" class="form-control pb-2 fs-4" id="exampleInputEmail1"
+            aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text" style="color:white;">We'll never share your email with anyone else.
+          </div>
         </div>
         <div class="form-floating mb-4">
-          <textarea class="form-control fs-4" id="mytextarea" placeholder="Leave a comment here" id="floatingTextarea" style="color:black;" required></textarea>
-            <label for="floatingTextarea">Comments</label>
+          <textarea class="form-control fs-4" id="mytextarea" placeholder="Leave a comment here" id="floatingTextarea"
+            style="color:black;" required></textarea>
+          <label for="floatingTextarea">Comments</label>
         </div>
-      <div class="text-center">
-        <button class="btn w-50 btn-primary fs-5">Submit</button>
-      </div>
+        <div class="text-center">
+          <button class="btn w-50 btn-primary fs-5">Submit</button>
+        </div>
       </form>
     </div>
   </div>
   <!------footer------->
-<div class="container-fluid pb-4 bg-white pt-3 mt-5">
-  <div class="row">
-    <div class="text-center text-black" >
-      <a href="https://www.facebook.com/ajith.eshwar.5" style=" text-decoration: none; color:black;">
-      <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/_ajithk.v/" style=" text-decoration: none; color:black;">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://github.com/Ajith66310" style=" text-decoration: none; color:black;">
-      <i class="fa-brands fa-github"></i>
-      </a>
-      <p style="font-weight: 500; font-size:10px;">Copyright ©️</p>
+  <div class="container-fluid pb-4 bg-white pt-3 mt-5">
+    <div class="row">
+      <div class="text-center text-black">
+        <a href="https://www.facebook.com/ajith.eshwar.5" style=" text-decoration: none; color:black;">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/_ajithk.v/" style=" text-decoration: none; color:black;">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Ajith66310" style=" text-decoration: none; color:black;">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <p style="font-weight: 500; font-size:10px;">Copyright ©️</p>
+      </div>
     </div>
   </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/2fd464f8f2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://kit.fontawesome.com/2fd464f8f2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
