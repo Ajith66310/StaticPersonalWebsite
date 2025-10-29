@@ -1,67 +1,105 @@
-*{
-    margin: 0px;
-    padding:0px;
-}
-.navbar{
-    background-color: darkgreen;
-}
-.navbar-brand{
-    font-size:15px;
-    font-weight: 600;
-    font-family: sans-serif;
-}
-ul li{
-    font-size:20px;
-    font-weight: 600;
-    padding-left:20px;
-    font-family: serif
-}
-.card{
-    margin-top:150px;
-    align-content: center;
-    padding: 20px;
-}
-.col-md-4 img{
-    border-radius: 500px;
-}
-.card-body{
-    text-align: center;
-    margin-top:150px;
-    font-size:30px;
-    font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.main-card{
-    height: 100vh; /* Full viewport height */
-    margin-top: 0;
-    padding: 0;
+.navbar {
+  background-color: darkgreen;
 }
 
-.left-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); /* Custom shape */
+.navbar-brand {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media(max-width:991px){
-    .card-body{
-    text-align:center;
-    margin-top:65px;
-    }
-    ul li{
-        padding-left:5px;
-    }
-    
-}
-@media(max-width:768px){
-    .card-body{
-        margin-top:20px;
-    }
-   .left-image img{
-        clip-path: none; /* Remove custom shape on small screens */
-        border-radius: 0;
-    }
+ul li {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
+.card {
+  margin-top: 150px;
+  align-content: center;
+  padding: 20px;
+}
+
+.col-md-4 img {
+  border-radius: 500px;
+}
+
+.card-body {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.card-body p {
+  font-family: 'Playfair Display', serif; /* Premium serif font */
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+}
+
+/* Specific styling for text */
+.card-body p.text-primary {
+  color: #007bff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-body p.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Adjust main card layout */
+.main-card {
+  height: 100vh;
+  margin-top: 0;
+  padding: 0;
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+/* Navbar items align right on small screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: flex-end !important;
+    text-align: right;
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+  }
+
+  ul li {
+    padding-left: 5px;
+  }
+
+  .card-body {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    margin-top: 20px;
+  }
+
+  .left-image img {
+    clip-path: none;
+    border-radius: 0;
+  }
+}
